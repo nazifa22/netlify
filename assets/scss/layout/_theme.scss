@@ -1,0 +1,10 @@
+$theme-colors: (
+  "info": #7eff4b,
+  "danger": #ff50f0,
+  "primary": #BCE1FB,
+  "secondary": #B9F7FA
+);
+
+$body-color: #192534;
+
+@import "node_modules/bootstrap/scss/bootstrap";

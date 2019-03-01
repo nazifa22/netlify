@@ -1,0 +1,42 @@
+<!-- Remove any gulp from your computer globally
+  1. npm rm gulp -g
+--> 
+
+<!-- Install gulp globally
+  1. nmp install gulp-cli -g
+-->
+
+<!-- On folder 
+  1. npm init -y
+  2. npm install gulp --save-dev
+  3. create folders
+	ex. i. assets/css {it should be empty}
+	ii. assets/sass/style.sass
+	iii. gulpfile.js
+4. npm install gulp-sass --save-dev
+5. to run gulp sass {sass because i have used that name on gulpfile}
+  
+-->
+
+<!-- gulpfile.js
+var gulp = require('gulp');
+var sass= require('gulp-sass');
+
+gulp.task('sass', function(){
+    // console.log('anyhting about gulp');
+    return gulp.src('assets/scss/style.sass')
+        .pipe(sass())
+        .pipe(gulp.dest('assets/css'))
+});
+-->
+
+
+<!-- To install bootstrap on any local project
+1. npm init -y
+2. npm install
+3. npm install bootstrap --save
+-->
+
+<!-- To run manually (Without Gulp)
+1. sass path/filename.sass/filename.scss filename.css
+-->
