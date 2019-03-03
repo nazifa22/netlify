@@ -33,4 +33,8 @@
   @else if $media == normalDevices {
     @media only screen and (min-width: $landscape-tablets+1) { @content; }
   }
+
+  @else if $media == smallDevices {
+    @media only screen and (max-width: $landscape-tablets) { @content; }
+  }
 }

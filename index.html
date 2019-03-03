@@ -5,59 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Srisakdi" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    <section>
-        <div class="container">
-            <div class="row text-center">
-                <div class="col">
-                    <button class="btn btn-primary">
-                        Button Primary
-                    </button>
-                    <button class="btn btn-danger">
-                        Button Danger
-                    </button>
-                    <button class="btn btn-secondary">
-                        Button Secondary
-                    </button>
+<body data-spy="scroll" data-target="#navbarSupportedContent">
+    <!-- Icon Section Strats
+    ======================== -->
+    <div class="icons">
+        <i class="fab fa-facebook-f"></i>
+        <br>
+        <i class="fab fa-twitter"></i>
+        <br>
+        <i class="fab fa-github"></i>
+        <br>
+        <i class="fab fa-linkedin"></i>
+    </div>
+    <!-- Icon Section Ends
+    ====================== -->
 
+    <!-- Header Section Starts
+    ========================== -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent fixed-top">
+            <a class="navbar-brand logo" href="#"><img src="assets/images/logo-dark.png" alt="Brand Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Testimonial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Header Section Ends
+    ======================== -->
+
+    <!-- Banner Section Starts
+    ========================== -->
+    <section class="banner-section">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="text">
+                        <h1>Make your business reach the highest level with Lightan</h1>
+                        <h5>Sodales fusce vehicula nisl sed metus rutrum id placerat odio sodale faucibus luscipit maecenas volutpat ultricies sodales Nullam vitae metus purus rhoncus ligula.</h5>
+                        <button class="btn btn-outline-primary">Sign up free</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="image">
+                        <img src="assets/images/img-1.png" alt="Image 1">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section>
-        <div class="container">
-            <p>Lorem Ipsum</p>
-            <div class="alert alert-primary" role="alert">
-                This is a primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-            </div>
-            <div class="alert alert-secondary" role="alert">
-                This is a secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-            </div>
-            <div class="alert alert-success" role="alert">
-                This is a success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-            </div>
-            <div class="alert alert-danger" role="alert">
-                This is a danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-            </div>
-            <div class="alert alert-warning" role="alert">
-                This is a warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-            </div>
-            <div class="alert alert-info" role="alert">
-                This is a info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-            </div>
-            <div class="alert alert-light" role="alert">
-                This is a light alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-            </div>
-            <div class="alert alert-dark" role="alert">
-                This is a dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-            </div>
-        </div>
-    </section>
-
+    <!-- Banner Section Ends
+    ======================== -->
+    
+    <!-- Font Awesome JS -->
+    <script src="assets/js/all.min.js"></script>
+    <!-- WOW JS -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- jQuery JS -->
     <script src="assets/js/jQuery.min.js"></script>
+    <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
     <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/custom.js"></script>
+    <script>
+      
+        wow = new WOW(
+            {
+            animateClass: 'animated',
+            offset:       100,
+            callback:     function(box) {
+                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+            }
+            }
+        );
+        wow.init();
+        document.getElementById('moar').onclick = function() {
+            var section = document.createElement('section');
+            section.className = 'section--purple wow fadeInDown';
+            this.parentNode.insertBefore(section, this);
+        };
+        
+    </script>
 </body>
 </html>

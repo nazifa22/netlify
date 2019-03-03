@@ -1,10 +1,12 @@
 $theme-colors: (
   "info": #7eff4b,
   "danger": #ff50f0,
-  "primary": #BCE1FB,
-  "secondary": #B9F7FA
+  "primary": rgb(123, 200, 255),
+  "secondary": rgb(84, 211, 218)
 );
 
 $body-color: #192534;
+
+$border-radius: 1.25rem;
 
 @import "node_modules/bootstrap/scss/bootstrap";

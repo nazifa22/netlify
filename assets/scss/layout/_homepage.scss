@@ -4,3 +4,83 @@
 @import 'layout/_extend';
 @import 'layout/_mixin';
 @import 'layout/_theme';
+
+header {
+
+    .bg-transparent {
+        background-color: transparent !important;
+
+        .logo {
+        
+            img {
+                width: 70%;
+            }
+        }
+
+        .menu {
+
+            ul {
+
+                li {
+                    padding: 10px;
+
+                    a {
+                        font-size: 18px;
+                        color: $black !important;
+                        font-weight: bold !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.banner-section {
+    background: url(../../assets/images/bg.jpg);
+    padding: 100px 0 0;
+
+    @include respond-to(handhelds)
+    {
+        text-align: center !important;
+    }
+
+    .text {
+        h1 {
+            font-weight: bold;
+            font-size: 4vw;
+
+            @include respond-to(smallDevices)
+            {
+                font-size: 5vw !important;
+            }
+        }
+
+        h5 {
+            font-weight: bold;
+            font-size: 18px;
+            padding: 20px 0;
+
+            @include respond-to(handhelds)
+            {
+                padding: 10px 0 !important
+            }
+        }
+
+        button {
+            font-weight: bold;
+            color: $black;
+            padding: 6px 15px;
+        }
+    }
+
+    .image {
+        
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.effect {
+    background-color: $white !important;
+}
