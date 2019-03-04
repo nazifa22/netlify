@@ -14109,3 +14109,12 @@ header .bg-transparent {
 
 .effect {
   background-color: #fff !important; }
+
+.icons {
+  display: inline-block;
+  position: fixed;
+  top: 270px;
+  left: 50px; }
+  .icons svg {
+    font-size: 20px;
+    margin: 5px 0; }

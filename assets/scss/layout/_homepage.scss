@@ -84,3 +84,15 @@ header {
 .effect {
     background-color: $white !important;
 }
+
+.icons {
+    display: inline-block;
+    position: fixed;
+    top: 270px;
+    left: 50px;
+
+    svg {
+        font-size: 20px;
+        margin: 5px 0;
+    }
+}
