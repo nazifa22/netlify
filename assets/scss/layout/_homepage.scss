@@ -5,6 +5,41 @@
 @import 'layout/_mixin';
 @import 'layout/_theme';
 
+.effect {
+    background-color: $white !important;
+}
+
+.icons {
+    position: fixed;
+    display: inline-block;
+    top: 280px;
+    left: 55px;
+
+    svg {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+
+    &::after {
+        width: 250px;
+        height: 5px;
+        content: "";
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        z-index: 0;
+        margin: auto;
+        background: -webkit-radial-gradient(50% 50%, ellipse closest-side, $primary, rgba(255, 42, 112, 0) 60%);
+    }
+}
+
 header {
 
     .bg-transparent {
@@ -81,6 +116,22 @@ header {
     }
 }
 
-.effect {
-    background-color: $white !important;
+#features {
+    padding: 100px 0;
+
+    @include respond-to(smallDevices) {
+        padding: 50px 0 !important;
+    }
+
+    .title-div {
+        
+        p {
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+
+    .row-2 {
+        margin-top: 70px;
+    }
 }
