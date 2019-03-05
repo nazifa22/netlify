@@ -14135,6 +14135,7 @@ header .bg-transparent {
   .banner-section .image img {
     width: 100%; }
 
+<<<<<<< HEAD
 #features {
   padding: 100px 0; }
   @media only screen and (max-width: 768px) {
@@ -14145,3 +14146,16 @@ header .bg-transparent {
     font-size: 18px; }
   #features .row-2 {
     margin-top: 70px; }
+=======
+.effect {
+  background-color: #fff !important; }
+
+.icons {
+  display: inline-block;
+  position: fixed;
+  top: 270px;
+  left: 50px; }
+  .icons svg {
+    font-size: 20px;
+    margin: 5px 0; }
+>>>>>>> efd6f91fc14e7df0a01684db9197c743b06f8310

@@ -115,23 +115,3 @@ header {
         }
     }
 }
-
-#features {
-    padding: 100px 0;
-
-    @include respond-to(smallDevices) {
-        padding: 50px 0 !important;
-    }
-
-    .title-div {
-        
-        p {
-            text-align: center;
-            font-size: 18px;
-        }
-    }
-
-    .row-2 {
-        margin-top: 70px;
-    }
-}
