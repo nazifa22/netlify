@@ -2,3 +2,36 @@
 @import 'base/_variables';
 @import 'layout/_mixin';
 @import 'layout/_theme';
+
+%title {
+    position: relative;
+    
+    .title {
+        text-align: center;
+        margin-bottom: 40px;
+        font-weight: bold;
+    
+        &::after {
+            width: 250px;
+            height: 5px;
+            content: "";
+            position: absolute;
+            top: 50px;
+            left: 0;
+            right: 0;
+            z-index: 0;
+            margin: auto;
+            background: -webkit-radial-gradient(50% 50%, ellipse closest-side, $primary, rgba(255, 42, 112, 0) 60%);
+        }
+    }
+
+    p {
+        text-align: center;
+        font-size: 24px;
+
+        @include respond-to(smallDevices)
+        {
+            font-size: 20px !important;
+        }
+    }
+}

@@ -5,10 +5,6 @@
 @import 'layout/_mixin';
 @import 'layout/_theme';
 
-.effect {
-    background-color: $white !important;
-}
-
 .icons {
     position: fixed;
     display: inline-block;
@@ -21,29 +17,18 @@
     }
 }
 
-.title {
-    text-align: center;
-    margin-bottom: 40px;
-    font-weight: bold;
-
-    &::after {
-        width: 250px;
-        height: 5px;
-        content: "";
-        position: absolute;
-        top: 50px;
-        left: 0;
-        right: 0;
-        z-index: 0;
-        margin: auto;
-        background: -webkit-radial-gradient(50% 50%, ellipse closest-side, $primary, rgba(255, 42, 112, 0) 60%);
-    }
+button {
+    font-weight: bold !important;
+    color: $primary;
+    padding: 6px 15px;
 }
 
 header {
 
     .bg-transparent {
         background-color: transparent !important;
+        position: absolute;
+        width: 100%;
 
         .logo {
         
@@ -100,18 +85,119 @@ header {
                 padding: 10px 0 !important
             }
         }
-
-        button {
-            font-weight: bold;
-            color: $black;
-            padding: 6px 15px;
-        }
     }
 
     .image {
         
         img {
             width: 100%;
+        }
+    }
+}
+
+#features {
+    padding: 100px 0;
+
+    @include respond-to(smallDevices)
+    {
+        padding: 50px 0 !important;
+    }
+
+    .title-div {
+        @extend %title;
+    }
+
+    .row-1 {
+        margin: 50px 0 100px;
+
+        @include respond-to(smallDevices) 
+        {
+            margin: 50px 0 !important;
+        }
+    }
+
+    .row-1, .row-2 {
+        
+        .text {
+            @include respond-to(smallDevices)
+            {
+                text-align: center !important;
+                padding: 10px 0 !important;
+            }
+
+            span {
+                font-weight: bold;
+                font-size: 40px;
+            }
+
+            h2 {
+                font-weight: bold;
+                font-size: 3vw;
+
+                @include respond-to(smallDevices)
+                {
+                    font-size: 4vw !important;
+                }
+
+                @include respond-to(handhelds)
+                {
+                    font-size: 7vw !important;
+                }
+            }
+        }
+    }
+}
+
+#services {
+
+    .title-div {
+        @extend %title;
+    }
+
+    .wrapper {
+        box-shadow: 8px 10px 30px -10px rgba(0, 0, 0, 0.1);
+        margin: 15px 0;
+        padding: 40px 35px;
+        @include transition(all 0.7s ease);
+
+        &:hover {
+            @include transition(all 0.7s ease);
+            background: $bg;
+            transform: scale(.9);
+
+            .icon {
+
+                &::after {
+                    top: 26px;
+                    left: 40px;
+                    @include transition(all 0.5s linear);
+                }
+            }
+        }
+
+        h3 {
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .icon {
+
+            &::after {
+                content: '';
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: -webkit-gradient(linear, left top, right top, from(transparent), to($primary));
+                background: linear-gradient(to right, transparent, $primary);
+                position: absolute;
+                top: 44px;
+                left: 55px;
+                @include transition(all 0.5s linear);
+            }
+
+            svg {
+                font-size: 25px;
+            }
         }
     }
 }
