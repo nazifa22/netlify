@@ -52,6 +52,11 @@ header {
                 }
             }
         }
+
+        .navbar-collapse {
+            background-color: $nav-bg;
+            z-index: 999;
+        }
     }
 }
 
@@ -91,6 +96,12 @@ header {
         
         img {
             width: 100%;
+
+            @include respond-to(smallDevices)
+            {
+                width: 50% !important;
+                margin: 25px 0 !important;
+            }
         }
     }
 }
