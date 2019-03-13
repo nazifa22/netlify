@@ -14120,9 +14120,10 @@ header .bg-transparent {
       font-size: 18px;
       color: #000 !important;
       font-weight: bold !important; }
-  header .bg-transparent .navbar-collapse {
-    background-color: #bddffb;
-    z-index: 999; }
+  @media only screen and (max-width: 768px) {
+    header .bg-transparent .navbar-collapse {
+      background-color: #bddffb;
+      z-index: 999; } }
 
 .banner-section {
   background: url(../../assets/images/bg.jpg);
@@ -14177,44 +14178,71 @@ header .bg-transparent {
       #features .row-1 .text h2, #features .row-2 .text h2 {
         font-size: 7vw !important; } }
 
-#services .wrapper {
-  box-shadow: 8px 10px 30px -10px rgba(0, 0, 0, 0.1);
-  margin: 15px 0;
-  padding: 40px 35px;
-  transition: all 0.7s ease; }
-  @media (prefers-reduced-motion: reduce) {
-    #services .wrapper {
-      transition: none; } }
-  #services .wrapper:hover {
-    transition: all 0.7s ease;
-    background: #f2f2f2;
-    transform: scale(0.9); }
+#services {
+  padding: 0 0 100px; }
+  #services .wrapper {
+    box-shadow: 8px 10px 30px -10px rgba(0, 0, 0, 0.1);
+    margin: 15px 0;
+    padding: 40px 35px;
+    transition: all 0.7s linear; }
     @media (prefers-reduced-motion: reduce) {
-      #services .wrapper:hover {
+      #services .wrapper {
         transition: none; } }
-    #services .wrapper:hover .icon::after {
-      top: 26px;
-      left: 40px;
+    #services .wrapper:hover {
+      transition: all 0.7s linear;
+      transform: scale(0.9); }
+      @media (prefers-reduced-motion: reduce) {
+        #services .wrapper:hover {
+          transition: none; } }
+      #services .wrapper:hover .icon::after {
+        top: 26px;
+        left: 40px;
+        transition: all 0.5s linear; }
+        @media (prefers-reduced-motion: reduce) {
+          #services .wrapper:hover .icon::after {
+            transition: none; } }
+    #services .wrapper h3 {
+      font-weight: bold;
+      margin: 20px 0; }
+    #services .wrapper p {
+      font-size: 18px; }
+    #services .wrapper .icon::after {
+      content: '';
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: -webkit-gradient(linear, left top, right top, from(transparent), to(#0095ff));
+      background: linear-gradient(to right, transparent, #0095ff);
+      position: absolute;
+      top: 44px;
+      left: 55px;
       transition: all 0.5s linear; }
       @media (prefers-reduced-motion: reduce) {
-        #services .wrapper:hover .icon::after {
+        #services .wrapper .icon::after {
           transition: none; } }
-  #services .wrapper h3 {
+    #services .wrapper .icon svg {
+      font-size: 25px; }
+
+#counter {
+  background: #0095ff;
+  color: #fff;
+  padding: 80px 0;
+  text-align: center; }
+  @media only screen and (max-width: 768px) {
+    #counter {
+      padding: 50px 0 !important; } }
+  @media only screen and (max-width: 768px) {
+    #counter .wrapper {
+      padding: 20px 0 !important; } }
+  #counter .wrapper svg {
+    font-size: 40px; }
+  #counter .wrapper h1 {
     font-weight: bold;
-    margin: 20px 0; }
-  #services .wrapper .icon::after {
-    content: '';
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: -webkit-gradient(linear, left top, right top, from(transparent), to(#0095ff));
-    background: linear-gradient(to right, transparent, #0095ff);
-    position: absolute;
-    top: 44px;
-    left: 55px;
-    transition: all 0.5s linear; }
-    @media (prefers-reduced-motion: reduce) {
-      #services .wrapper .icon::after {
-        transition: none; } }
-  #services .wrapper .icon svg {
-    font-size: 25px; }
+    margin: 20px 0;
+    font-size: 30px; }
+  #counter .wrapper h4 {
+    font-weight: bold;
+    font-size: 18px; }
+  #counter .counter {
+    animation-duration: 1s;
+    animation-delay: 0s; }

@@ -54,8 +54,12 @@ header {
         }
 
         .navbar-collapse {
-            background-color: $nav-bg;
-            z-index: 999;
+
+            @include respond-to(smallDevices)
+            {
+                background-color: $nav-bg;
+                z-index: 999;
+            }
         }
     }
 }
@@ -160,7 +164,8 @@ header {
 }
 
 #services {
-
+    padding: 0 0 100px;
+    
     .title-div {
         @extend %title;
     }
@@ -169,11 +174,10 @@ header {
         box-shadow: 8px 10px 30px -10px rgba(0, 0, 0, 0.1);
         margin: 15px 0;
         padding: 40px 35px;
-        @include transition(all 0.7s ease);
+        @include transition(all 0.7s linear);
 
         &:hover {
-            @include transition(all 0.7s ease);
-            background: $bg;
+            @include transition(all 0.7s linear);
             transform: scale(.9);
 
             .icon {
@@ -189,6 +193,10 @@ header {
         h3 {
             font-weight: bold;
             margin: 20px 0;
+        }
+
+        p {
+            font-size: 18px;
         }
 
         .icon {
@@ -211,4 +219,48 @@ header {
             }
         }
     }
+}
+
+#counter {
+    background: $primary;
+    color: $white;
+    padding: 80px 0;
+    text-align: center;
+
+    @include respond-to(smallDevices)
+    {
+        padding: 50px 0 !important;
+    }
+
+    .wrapper {
+
+        @include respond-to(smallDevices) 
+        {
+            padding: 20px 0 !important;
+        }
+
+        svg {
+            font-size: 40px;
+        }
+
+        h1 {
+            font-weight: bold;
+            margin: 20px 0;
+            font-size: 30px;
+        }
+
+        h4 {
+            font-weight: bold;
+            font-size: 18px;
+        }
+    }
+
+    .counter {
+        animation-duration: 1s;
+        animation-delay: 0s;
+    }
+}
+
+#testimonial {
+    
 }
