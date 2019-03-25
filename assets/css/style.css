@@ -7036,13 +7036,13 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-#features .title-div, #services .title-div {
+#features .title-div, #services .title-div, #testimonial .title-div {
   position: relative; }
-  #features .title-div .title, #services .title-div .title {
+  #features .title-div .title, #services .title-div .title, #testimonial .title-div .title {
     text-align: center;
     margin-bottom: 40px;
     font-weight: bold; }
-    #features .title-div .title::after, #services .title-div .title::after {
+    #features .title-div .title::after, #services .title-div .title::after, #testimonial .title-div .title::after {
       width: 250px;
       height: 5px;
       content: "";
@@ -7053,11 +7053,11 @@ a.text-dark:hover, a.text-dark:focus {
       z-index: 0;
       margin: auto;
       background: -webkit-radial-gradient(50% 50%, ellipse closest-side, #0095ff, rgba(255, 42, 112, 0) 60%); }
-  #features .title-div p, #services .title-div p {
+  #features .title-div p, #services .title-div p, #testimonial .title-div p {
     text-align: center;
     font-size: 24px; }
     @media only screen and (max-width: 768px) {
-      #features .title-div p, #services .title-div p {
+      #features .title-div p, #services .title-div p, #testimonial .title-div p {
         font-size: 20px !important; } }
 
 /*!
@@ -14246,3 +14246,32 @@ header .bg-transparent {
   #counter .counter {
     animation-duration: 1s;
     animation-delay: 0s; }
+
+#testimonial {
+  padding: 50px 0;
+  text-align: center; }
+  #testimonial .slider img {
+    width: 10% !important;
+    border-radius: 50%; }
+  #testimonial .slider p {
+    font-size: 18px;
+    margin: 20px 0; }
+    @media only screen and (max-width: 768px) {
+      #testimonial .slider p {
+        font-size: 16px !important; } }
+  #testimonial .slider h3 {
+    font-weight: bold; }
+    @media only screen and (max-width: 768px) {
+      #testimonial .slider h3 {
+        font-size: 22px !important; } }
+  #testimonial .images {
+    margin: 50px 0 0; }
+    @media only screen and (max-width: 768px) {
+      #testimonial .images {
+        margin: 0px 0 0 !important; } }
+    #testimonial .images img {
+      width: 60%; }
+      @media only screen and (max-width: 768px) {
+        #testimonial .images img {
+          margin: 30px 0 0 !important;
+          width: 30% !important; } }

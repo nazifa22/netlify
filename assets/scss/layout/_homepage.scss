@@ -262,5 +262,55 @@ header {
 }
 
 #testimonial {
-    
+    padding: 50px 0;
+    text-align: center;
+
+    .title-div {
+        @extend %title;
+    }
+
+    .slider {
+        img {
+            width: 10% !important;
+            border-radius: 50%;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 20px 0;
+
+            @include respond-to(smallDevices) 
+            {
+                font-size: 16px !important;
+            }
+        }
+
+        h3 {
+            font-weight: bold;
+
+            @include respond-to(smallDevices) 
+            {
+                font-size: 22px !important;
+            }
+        }
+    }
+
+    .images {
+        margin: 50px 0 0;
+
+        @include respond-to(smallDevices) 
+        {
+            margin: 0px 0 0 !important;
+        }
+
+        img {
+            width: 60%;
+            
+            @include respond-to(smallDevices) 
+            {
+                margin: 30px 0 0 !important;
+                width: 30% !important;
+            }
+        }
+    }
 }
