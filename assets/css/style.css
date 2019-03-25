@@ -12,7 +12,8 @@ html {
 
 body {
   font-family: "Srisakdi", cursive !important;
-  position: relative; }
+  position: relative;
+  transition: all 0.7s ease; }
 
 a {
   color: #0095ff !important;
@@ -22,6 +23,13 @@ a {
     text-decoration: none;
     transition: all 0.7s ease;
     font-size: 18px; }
+
+img {
+  transition: all 0.7s ease; }
+
+img:hover {
+  transition: all 0.7s ease;
+  transform: scale(0.9, 0.9); }
 
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -14118,7 +14126,6 @@ button {
   padding: 6px 15px; }
 
 header .bg-transparent {
-  background-color: transparent !important;
   width: 100%;
   position: absolute; }
   header .bg-transparent .logo img {
@@ -14206,9 +14213,9 @@ header .bg-transparent {
         #services .wrapper:hover {
           transition: none; } }
       #services .wrapper:hover .icon::after {
-        top: 26px;
         left: 40px;
-        transition: all 0.5s linear; }
+        top: 26px;
+        transition: all 1s linear; }
         @media (prefers-reduced-motion: reduce) {
           #services .wrapper:hover .icon::after {
             transition: none; } }
@@ -14227,7 +14234,7 @@ header .bg-transparent {
       position: absolute;
       top: 44px;
       left: 55px;
-      transition: all 0.5s linear; }
+      transition: all 1s linear; }
       @media (prefers-reduced-motion: reduce) {
         #services .wrapper .icon::after {
           transition: none; } }

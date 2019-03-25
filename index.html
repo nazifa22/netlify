@@ -369,7 +369,7 @@
     ========================= -->
     <section id="video-section">
         <div class="container">
-            <div class="row">
+            <div class="row wow animated pulse">
                 <div class="col">
                     <div class="wrapper wow animated fpulse">
                         <h3>Best app in the market available now</h3>
@@ -398,7 +398,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12 wow afadeInLeft animated">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 wow fadeInLeft animated">
                     <div class="card custom-card" style="width: 100%;">
                         <img class="card-img-top" src="assets/images/img-1.jpg" alt="Card image cap">
                         <div class="card-body">
@@ -461,5 +461,24 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- Custom JS -->
     <script src="assets/js/custom.js"></script>
+
+    <script>
+      wow = new WOW(
+        {
+          animateClass: 'animated',
+          offset:       100,
+          callback:     function(box) {
+            console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+          }
+        }
+      );
+      wow.init();
+      document.getElementById('moar').onclick = function() {
+        var section = document.createElement('section');
+        section.className = 'section--purple wow fadeInDown';
+        this.parentNode.insertBefore(section, this);
+      };
+
+    </script>
 </body>
 </html>

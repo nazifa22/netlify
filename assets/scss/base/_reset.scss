@@ -18,6 +18,7 @@ html {
 body {
 	font-family: $font-family !important;
 	position: relative;
+	transition: all 0.7s ease;
 }
 
 a {
@@ -30,4 +31,13 @@ a {
 		transition: all 0.7s ease;
 		font-size: 18px;
 	}
+}
+
+img {
+    transition: all 0.7s ease;
+}
+
+img:hover {
+    transition: all 0.7s ease;
+    transform: scale(0.9, 0.9);
 }
