@@ -1,10 +1,3 @@
-$('.counter').counterUp({
-    delay: 10,
-    time: 2000
-  });
-  $('.counter').addClass('animated fadeInDownBig');
-  $('h3').addClass('animated fadeIn');
-
 $('body').scrollspy({ target: '#navbar-example', offset 100});
 
 $('[data-spy="scroll"]').each(function () {
