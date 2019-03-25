@@ -19,3 +19,15 @@ body {
 	font-family: $font-family !important;
 	position: relative;
 }
+
+a {
+	color: $primary !important;
+	transition: all 0.7s ease;
+
+	&:hover {
+		color: $primary !important;
+		text-decoration: none;
+		transition: all 0.7s ease;
+		font-size: 18px;
+	}
+}

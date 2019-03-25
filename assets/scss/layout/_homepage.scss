@@ -24,11 +24,10 @@ button {
 }
 
 header {
-
     .bg-transparent {
         background-color: transparent !important;
-        position: absolute;
         width: 100%;
+        position: absolute;
 
         .logo {
         
@@ -104,7 +103,7 @@ header {
             @include respond-to(smallDevices)
             {
                 width: 50% !important;
-                margin: 25px 0 !important;
+                margin: 30px 0 !important;
             }
         }
     }
@@ -167,7 +166,11 @@ header {
     padding: 0 0 100px;
     
     .title-div {
-        @extend %title;
+        @extend %title; 
+
+        p {
+            margin: 30px 0 !important;
+        }
     }
 
     .wrapper {
@@ -243,10 +246,11 @@ header {
             font-size: 40px;
         }
 
-        h1 {
+        span {
             font-weight: bold;
             margin: 20px 0;
             font-size: 30px;
+            display: block;
         }
 
         h4 {
@@ -262,13 +266,25 @@ header {
 }
 
 #testimonial {
+<<<<<<< HEAD
     padding: 50px 0;
     text-align: center;
 
+=======
+    padding: 80px 0px;
+    text-align: center;
+
+    @include respond-to(smallDevices)
+    {
+        padding: 80px 0 60px;
+    }
+
+>>>>>>> e156d92b9412d73acc5f3afefc9f90048a84a28f
     .title-div {
         @extend %title;
     }
 
+<<<<<<< HEAD
     .slider {
         img {
             width: 10% !important;
@@ -283,12 +299,26 @@ header {
             {
                 font-size: 16px !important;
             }
+=======
+    .sliders {
+        img {
+            width: 165px;
+        }
+
+        p {
+            font-size: 20px;
+            margin: 25px 0 20px;
+>>>>>>> e156d92b9412d73acc5f3afefc9f90048a84a28f
         }
 
         h3 {
             font-weight: bold;
 
+<<<<<<< HEAD
             @include respond-to(smallDevices) 
+=======
+            @include respond-to(smallDevices)
+>>>>>>> e156d92b9412d73acc5f3afefc9f90048a84a28f
             {
                 font-size: 22px !important;
             }
@@ -296,6 +326,7 @@ header {
     }
 
     .images {
+<<<<<<< HEAD
         margin: 50px 0 0;
 
         @include respond-to(smallDevices) 
@@ -313,4 +344,132 @@ header {
             }
         }
     }
+=======
+        margin: 40px 0 0;
+
+        img {
+            width: 70%;
+
+            @include respond-to(smallDevices)
+            {
+                margin-bottom: 20px !important;
+                width: 50% !important;
+            }
+        }
+    }
+}
+
+#about {
+    padding: 80px 0;
+    background-color: $bg;
+
+    @include respond-to(smallDevices)
+    {
+        text-align: center !important;
+    }
+
+    .title-div {
+        @extend %title;
+
+        p {
+            margin: 30px 0 !important;
+        }
+    }
+
+    img {
+        @include respond-to(smallDevices)
+        {
+            margin-bottom: 50px !important;
+        }
+    }
+
+    .texts {
+        h3 {
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        span {
+            line-height: 30px;
+            font-size: 16px;
+        }
+
+        svg {
+            color: $primary;
+            font-size: 18px;
+        }
+    }
+
+    .buttons {
+        margin-top: 20px;
+    }
+}
+
+#video-section {
+    text-align: center;
+    padding: 50px 0;
+    background: $primary;
+    color: $white;
+
+    h3 {
+        font-weight: bold;
+    }
+
+    p {
+        margin: 20px 0;
+        font-size: 24px;
+    }
+
+    svg {
+        width: 80px !important;
+        height: 80px !important;
+        background: $white;
+        color: $primary;
+        padding: 18px 7px 20px 14px;
+        border-radius: 55%;
+    }
+}
+
+#blog-section {
+    padding: 80px 0;
+
+    .title-div {
+        @extend %title;
+
+        p {
+            margin: 30px 0 !important;
+        }
+    }
+
+    .custom-card {
+        border: none !important;
+
+        @include respond-to(smallDevices)
+        {
+            margin-bottom: 40px !important;
+        }
+
+        .card-body {
+            padding: 40px 0 0 !important;
+
+            h5 {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+footer {
+    background: $primary;
+    padding: 40px 0 20px;
+
+    p {
+        color: $white;
+        font-size: 18px;
+    }
+>>>>>>> e156d92b9412d73acc5f3afefc9f90048a84a28f
 }
